@@ -8,6 +8,7 @@ import org.springframework.core.env.Environment;
 /**
  * @Author wen
  * @create 2020/6/9 22:11
+ * Property 读取配置值
  */
 public class IOCTest_PropertyValue {
 
