@@ -1,11 +1,11 @@
 package dao;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 /**
  * @Author wen
  * @create 2020/7/8 22:56
  */
-@Component
-public interface BookDao {
+@Repository
+public class BookDao {
 }

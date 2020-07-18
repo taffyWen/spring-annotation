@@ -1,5 +1,6 @@
 import config.MainConfig_Property;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -10,6 +11,7 @@ import org.springframework.core.env.Environment;
  * @create 2020/6/9 22:11
  * Property 读取配置值
  */
+
 public class IOCTest_PropertyValue {
 
     @Test

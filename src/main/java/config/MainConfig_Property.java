@@ -1,6 +1,5 @@
 package config;
 
-import bean.Person;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 

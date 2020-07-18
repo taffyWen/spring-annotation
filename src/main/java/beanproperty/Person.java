@@ -16,6 +16,7 @@ import org.springframework.stereotype.Component;
 @AllArgsConstructor
 @NoArgsConstructor
 @PropertySource(value = {"classpath:/person.properties"})  //{}可以配置数组
+
 public class Person {
 
     /**

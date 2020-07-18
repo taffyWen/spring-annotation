@@ -19,6 +19,6 @@ public class IOCTest_Autowired {
 
         BookDao bookDao = applicationContext.getBean(BookDao.class);
         System.out.println(bookDao);
-
+        applicationContext.close();
     }
 }
