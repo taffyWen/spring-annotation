@@ -16,14 +16,17 @@ import org.springframework.stereotype.Component;
 @AllArgsConstructor
 @NoArgsConstructor
 @PropertySource(value = {"classpath:/person.properties"})  //{}可以配置数组
-
+/**
+ *  @PropertySource 指定配置文件路径
+ *  PropertySources
+ */
 public class Person {
 
     /**
      * @Value  赋值
      * 1. 基本数值
      * 2. SpEL，#{}
-     * 3. ${} ,取出配置文件的值  @PropertySource(value = "classpath:/person.properties")
+     * 3. ${} ,取出配置文件的值  @PropertySource(value = "classpath:/person.properties") ---》指定从哪里加载配置文件
      * 4.
      */
     @Value("wen")

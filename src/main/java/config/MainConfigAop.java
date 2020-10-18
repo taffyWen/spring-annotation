@@ -13,8 +13,11 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  *
  * 1. 导入aop模块
  * 2. 定义i业务逻辑类，在业务逻辑运行时将日志进行打印
+ *
+ *      @EnableAspectJAutoProxy
+ *          @Import(AspectJAutoProxyRegistrar.class)
  */
-@EnableAspectJAutoProxy
+@EnableAspectJAutoProxy   //---》开启aop
 @Configuration
 public class MainConfigAop {
 

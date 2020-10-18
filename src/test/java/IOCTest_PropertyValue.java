@@ -23,7 +23,10 @@ public class IOCTest_PropertyValue {
         System.out.println(person);
 
         Environment environment = applicationContext.getEnvironment();
-        //TODO 需要着重看的 --》使用@PropertySource(value = "classpath:/person.properties")，此处可以获取值
+        /**
+         * 需要着重看的 --》使用@PropertySource(value = "classpath:/person.properties")，此处可以获取值
+         * 配置的值，加载到环境变量中
+         */
         String property = environment.getProperty("person.nickName");
         System.out.println(property);
         applicationContext.close();//容器关闭

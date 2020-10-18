@@ -2,10 +2,7 @@ package aop;
 
 
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.annotation.*;
 import org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint;
 
 /**
@@ -37,4 +34,18 @@ public class LogAspects {
         System.out.println("除法结束了");
     }
 
+    @AfterReturning(value = "pointCut()",returning = "result")
+    public void logReturn(Object result){
+        System.out.println("除法正常返回。。。@AfterReturning：运行结果是" + result);
+    }
+
+    /**
+     * JoinPoint --->放到参数列表的第一位
+     * @param joinPoint
+     * @param exception
+     */
+    @AfterThrowing(value = "pointCut()",throwing = "exception")
+    public void logException(JoinPoint joinPoint,Exception exception){
+        System.out.println("除法正常返回。。。@logException：运行结果是" + exception);
+    }
 }
